@@ -1,3 +1,4 @@
+// uppgift 2
 let x = 5;
 var y = 10;
 const z = 15;
@@ -34,8 +35,10 @@ const z = 15;
     dock så ändrar sig var variabeln eftersom att den blivit tillgiven ett annat värde i blocket.
 */
 
+// uppgift 3
 const add = (num1, num2) => num1 + num2;
 
+console.log(add(5, 10));
 /* 
     om man hade använt let istället för const så hade variabeln add kunnat
     ändrats till något annat senare i koden.
@@ -48,3 +51,5 @@ const add = (num1, num2) => num1 + num2;
     När en funktion returnerar innebär det att den skickar tillbaka ett värde
     som kan användas i andra delar av koden.
 */
+
+
