@@ -33,3 +33,18 @@ const z = 15;
     console.log efter blocket skriver ut de värden som blivit tillgivna i det globala scopet
     dock så ändrar sig var variabeln eftersom att den blivit tillgiven ett annat värde i blocket.
 */
+
+const add = (num1, num2) => num1 + num2;
+
+/* 
+    om man hade använt let istället för const så hade variabeln add kunnat
+    ändrats till något annat senare i koden.
+
+    function add(num1,num2)
+    {
+        return num1 + num2;
+    }
+
+    När en funktion returnerar innebär det att den skickar tillbaka ett värde
+    som kan användas i andra delar av koden.
+*/
