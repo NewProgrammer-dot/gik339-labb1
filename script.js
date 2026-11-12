@@ -1,16 +1,16 @@
 // uppgift 2
-let x = 5;
-var y = 10;
-const z = 15;
+// let x = 5;
+// var y = 10;
+// const z = 15;
 
 // console.log(x);
 // console.log(y);
 // console.log(z);
 
 {
-    let x = 20;
-    var y = 30;
-    const z = 40;
+    // let x = 20;
+    // var y = 30;
+    // const z = 40;
     
     // console.log(x);
     // console.log(y);
@@ -36,9 +36,9 @@ const z = 15;
 */
 
 // uppgift 3
-const add = (num1, num2) => num1 + num2;
+// const add = (num1, num2) => num1 + num2;
 
-console.log(add(5, 10));
+// console.log(add(5, 10));
 /* 
     om man hade använt let istället för const så hade variabeln add kunnat
     ändrats till något annat senare i koden.
@@ -52,4 +52,34 @@ console.log(add(5, 10));
     som kan användas i andra delar av koden.
 */
 
+// uppgift 4
+// const add = (num1, num2) => 
+// {
+// console.log(num1 == 0);
+// console.log(num2 === '0');
+// console.log(num2 === 0);
+// console.log(num1 == NaN);
 
+// console.log(num1 ? "truthy" : "falsy");
+
+// if (!(num1 == null || num2 == null) && !(num1 === undefined || num2 === undefined) &&
+//     (typeof num1 === 'number' && typeof num2 === 'number'))
+//     {
+//     return num1 + num2;
+//     }
+// else {
+//     console.log('Error: Invalid input. Please provide two numbers.');
+// }
+// };
+//testar bara med olika inputs:
+// console.log(add(5, 10));
+// console.log(add(5, '10'));
+// console.log(add(null, 3));
+// console.log(add(undefined));
+/* 
+    en ternary operator är en förkortad version av en if/else sats, den skiljer sig från
+    en vanlig if/else sats genom att den är mer kompakt och används för att tilldela ett värde baserat på ett villkor.
+
+    skillnaden mellan == och === är att == jämför värdena och gör typkonvertering vid behov.
+    === jämför både värdena och deras datatyper, vilket innebär att det inte sker någon typkonvertering.
+*/
