@@ -6,8 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Genom att göra såhär så kopplar vi JavaScript till vår HTML -->
     <script src="script.js"></script>
-    <!-- Attributen defer är ett sätt att ladda in js filer utan att behöva vänta på att sidan laddas helt -->
 </body>
 </html>
+
+<!-- 1. <script> i <head> körs innan sidan laddats ner helt, vilket innebär att elementen inte finns än
+    Om <script> ligger längst ner i <body> är sidan redan inläst och elementen finns, vilket gör att scriptet kan köras utan problem.
+
+    2. defer laddar skriptet samtidigt som HTML men väntar med att köra tills hela sidan blivit inläst. Då kan det ligga i <head> utan problem.
+    -->

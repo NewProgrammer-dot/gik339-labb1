@@ -7,7 +7,7 @@
 // console.log(y);
 // console.log(z);
 
-{
+// {
     // let x = 20;
     // var y = 30;
     // const z = 40;
@@ -15,7 +15,7 @@
     // console.log(x);
     // console.log(y);
     // console.log(z);
-}
+// }
 
 // console.log(x);
 // console.log(y);
@@ -87,6 +87,10 @@
     2.
     skillnaden mellan == och === är att == jämför värdena och gör typkonvertering vid behov.
     === jämför både värdena och deras datatyper, vilket innebär att det inte sker någon typkonvertering.
+
+    3.
+    !(num1 == null || num2 == null) blir sant om varken num1 eller num2 är null. Med hjälp av && kopplas det ihop med nästa villkor 
+    !(num1 === undefined || num2 === undefined) som blir sant om varken num1 eller num2 är undefined.
 */
 
 // uppgift 5
@@ -115,9 +119,16 @@
     Variabel är den generella lagringen av data som kan ändras under programmets gång.
 
     2. Outputen som vi får från num1 är 0
-    eftersom att variabeln är en const och inte kan ändras.
+    Parametern num1 i funktionen är en egen variabel som bara finns inom funktionen, så den yttre num1 påverkas aldrig
 
-    3. console.log(add(sum, 1)) 
+    3. när add(-5,num1) anropas i funktionen:
+    num1 = -5 och num2 = 0.
+    num1 == 0 ger false, num2 === '0' ger false, num2 === 0 ger true,
+    num1 == NaN ger false. Ternaryn ger "truthy" eftersom -5 inte är 0.
+    Inget är null eller undefined och båda är siffror, så if-satsen
+    släpps igenom och -5 + 0 = -5 returneras.
+    
+    console.log(add(sum, 1)) 
     sum är false, som är en boolean och inte en siffra. Villkoret
     typeof num1 === 'number' blir falskt, så else körs och skriver ut
     felmeddelandet. Funktionen returnerar inget, därför skriver
@@ -131,11 +142,6 @@
     console.log(add(3, "num1"))
     "num1" är en sträng med texten num1, inte variabeln num1.
     Villkoret blir falskt, felmeddelande och sedan undefined.
-
-    console.log(add(-5, num1))
-    num1 utan citattecken är variabeln, som har värdet 0. Båda
-    argumenten är siffror och inget är null eller undefined, så
-    villkoret blir sant och funktionen returnerar -5 + 0 = -5.
 
     console.log(add(arg1, 7))
     arg1 deklarerades utan värde och är därför undefined. Villkoret
